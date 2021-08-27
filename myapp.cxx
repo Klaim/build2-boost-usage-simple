@@ -24,7 +24,7 @@ int main (int argc, char* argv[])
 
   const auto now = boost::chrono::high_resolution_clock::now();
 
-  boost::container::flat_map<int, std::string> my_map;
+  boost::container::flat_map<std::string, kikoo> my_map;
 
-  fmt::print("Hello, {}!", argv[1]);
+  fmt::print("Hello, {}!\n", argv[1]);
 }
