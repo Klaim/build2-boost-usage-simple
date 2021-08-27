@@ -1,5 +1,8 @@
 libs =
-#import libs += libhello%lib{hello}
+import libs += libboost-array%lib{boost_array} \
+               libboost-variant2%lib{boost_variant2} \
+               libboost-chrono%lib{boost_chrono} \
+               libboost-container%lib{boost_container}
 
 ./: exe{myapp} doc{README.md} manifest
 
